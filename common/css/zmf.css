@@ -1,0 +1,103 @@
+body{
+    font-size: 13px;
+    line-height: 1.7
+}
+/*页面导航*/
+.header-fixed-btn{
+    position: absolute;
+    top: 0;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 0 15px
+}
+.ui-header .fa-angle-left{
+    left: 0;
+}
+.ui-header .fa-home{
+    right: 50px;
+}
+.ui-header .fa-list{
+    right: 0;
+}
+.top-navbar{
+    height: 45px;
+    background: url(../images/topbar_bg.png) repeat-x top
+}
+.top-navbar .header-btn{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px 10px;   
+    color: #333;
+    text-align: center;
+    margin-top: 5px
+}
+.top-navbar a.active{
+    background: #16A9F1;
+    color: #fff;
+}
+.top-navbar .ui-searchbar-wrap{
+    background: transparent
+}
+/*页面正文*/
+.container{
+    min-height: 300px;
+}
+/*模块*/
+.module{
+    max-width: 100%;
+    margin: 15px;
+    min-height: 200px;
+    border-radius: 5px;
+}
+
+/*深色面板*/
+.dark-block{
+    max-width: 100%;
+    margin: 15px;
+    min-height: 200px;
+    background: rgba(36,153,200,0.8);
+    display: block;
+    border-radius: 5px;
+    padding: 30px;
+    color: #fff
+}
+.dark-block h2{
+    font-size: 18px;
+    padding-bottom: 15px
+}
+.dark-block p{
+    text-indent: 2em
+}
+/*报事报修*/
+.report-btns .ui-list{
+    margin-bottom: 15px;
+    border-radius: 5px
+}
+.report-btns .report-title{
+    color: #333
+}
+/*页面背景*/
+.fixed-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: -1;
+    
+    background-size:cover 
+}
+.question-bg{
+    background: url(../images/question-bg.png) no-repeat center;
+}
+/*页面底部导航*/
+.footer-container{
+    height: 50px;
+    background: #0056ff
+}
+.footer-logo{
+    height: 50px;
+    background: url(../images/footer_logo.png) no-repeat center
+}
