@@ -2,6 +2,21 @@ body{
     font-size: 13px;
     line-height: 1.7
 }
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.color-grey{
+    color: #ccc
+}
+.color-blue{
+    color: #017EFF
+}
 /*页面导航*/
 .header-fixed-btn{
     position: absolute;
@@ -38,6 +53,35 @@ body{
 }
 .top-navbar .ui-searchbar-wrap{
     background: transparent
+}
+/*按钮*/
+.ui-btn-primary {
+    background-color: #027EDE;
+    border-color: #027EDE;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #027EDE), to(#027EDE));
+    color: white;
+    background-clip: padding-box;
+}
+.ui-btn-info {
+    background-color: #06BBF0;
+    border-color: #06BBF0;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #06BBF0), to(#06BBF0));
+    color: white;
+    background-clip: padding-box;
+}
+.ui-btn-warn {
+    background-color: #F08906;
+    border-color: #F08906;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #F08906), to(#F08906));
+    color: white;
+    background-clip: padding-box;
+}
+.ui-btn-danger {
+    background-color: #FD5262;
+    border-color: #FD5262;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #FD5262), to(#FD5262));
+    color: white;
+    background-clip: padding-box;
 }
 /*页面正文*/
 .container{
@@ -76,6 +120,27 @@ body{
 }
 .dark-block p{
     text-indent: 2em
+}
+.forum-block{
+    text-align: center;
+    padding: 15px 15px 0 15px;
+    background: #fff;
+    border-bottom: #f2f2f2
+}
+.forum-block .ui-avatar-one{
+    margin: 0 auto
+}
+.forum-block .ui-col{
+    padding-bottom: 15px;
+}
+.servce-lists{
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.servce-lists .ui-list-thumb{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
 }
 .dark-blue-form{
     max-width: 100%;
@@ -133,6 +198,7 @@ body{
     background: rgba(255,255,255,0.9);    
     border-radius: 5px;   
     margin-bottom: 20px;
+    
 }
 .panel .panel-header{
     height: 48px;
@@ -146,6 +212,33 @@ body{
 }
 .panel .panel-body{
     padding: 25px;
+    border: 1px solid #2499DC
+}
+.panel-form .form-item{
+    clear: both;
+    position: relative;
+    margin-bottom: 15px;
+}
+.panel-form label{
+    width: 60px; 
+    position: absolute;
+    left: 0;
+    top:6px;
+    text-align: justify;
+    color: #6c6d6e
+}
+.panel-form .form-input,.panel .panel-form .form-submit{
+    padding-left: 60px;    
+}
+.panel-form input,.panel .panel-form textarea{
+    border: 1px solid #2398DB;
+    padding: 10px 5px;
+    width: 100%;
+}
+.panel-form .form-submit button{
+    border-radius: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 /*报事报修*/
 .report-btns .ui-list{
@@ -154,6 +247,114 @@ body{
 }
 .report-btns .report-title{
     color: #333
+}
+/*进度展示*/
+.schedule-item{
+    max-width: 100%;
+    margin: 15px;
+    min-height: 200px;
+    background: rgba(255,255,255,0.9);    
+    border-radius: 5px;   
+    margin-bottom: 20px;    
+    padding: 15px 25px;
+    border: 1px solid #2499DC
+}
+.schedule-item img{
+    max-width: 100%;
+}
+.schedule-item .author,.shop-display .author{
+    margin-left: 10px;
+    color: #2983DB
+}
+/*商家介绍*/
+.shop-title-holder{
+    text-align: center;
+    color: #E2A962;
+    border: 2px solid #E2A962;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.shop-service{
+    color: #2399D9;
+    line-height: 1.7;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #E8E8E6;
+    margin-bottom: 15px
+}
+.shop-desc{
+    padding-bottom: 15px
+}
+.shop-desc p{
+    text-indent: 2em;
+    color: #696666
+}
+.shop-display{
+    margin: 0 15px;
+}
+.shop-display .shop-display-date{
+    color: #ccc;
+    margin-bottom: 5px;
+}
+.shop-display img{
+    max-width: 100%;
+}
+.news-subtitle{
+    color: #2699DC;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc
+}
+.news-content{
+    color: #595959
+}
+.news-content p{
+    text-indent: 2em
+}
+.news-content img{
+    max-width: 100%;
+    padding: 5px 0
+}
+/*项目详情*/
+.project-detail h1{
+    margin-bottom: 15px;
+    color: #fff
+}
+.project-desc{
+    background: #0a58a3;
+    padding: 15px;
+    color: #fff
+}
+.project-detail .project-desc p{
+    text-indent: 2em;
+}
+.project-detail .project-desc img{
+    max-width: 100%;
+    text-indent: 0;
+}
+.project-footer-navbar{
+    height: 45px;
+}
+.project-footer-navbar .ui-col{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #fff
+}
+.project-footer-navbar .project-phone{
+    background: #0A68C0
+}
+.project-footer-navbar .project-map{
+    background: #3A9FBB
+}
+.project-footer-navbar .project-sms{
+    background: #DE504F
+}
+/*新闻动态*/
+.news-lists .ui-list-thumb{
+    width: 60px;
+    height: 60px;
 }
 /*页面背景*/
 .fixed-bg{
@@ -174,6 +375,9 @@ body{
 }
 .city-bg{
     background: url(../images/city-bg.png) no-repeat center;
+}
+.online-contact{
+    background: #223A92
 }
 /*页面底部导航*/
 .footer-container{
