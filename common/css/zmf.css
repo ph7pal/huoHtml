@@ -18,6 +18,9 @@ body{
     color: #017EFF
 }
 /*页面导航*/
+.ui-footer-positive, .ui-header-positive{
+    background: #0056ff
+}
 .header-fixed-btn{
     position: absolute;
     top: 0;
@@ -40,7 +43,7 @@ body{
 }
 .top-navbar .header-btn{
     display: block;
-    width: 100%;
+    max-width: 100%;
     border-radius: 20px;
     padding: 5px 10px;   
     color: #333;
@@ -69,6 +72,13 @@ body{
     color: white;
     background-clip: padding-box;
 }
+.ui-btn-light-info {
+    background-color: #9adffa;
+    border-color: #9adffa;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #9adffa), to(#9adffa));
+    color: white;
+    background-clip: padding-box;
+}
 .ui-btn-warn {
     background-color: #F08906;
     border-color: #F08906;
@@ -80,6 +90,13 @@ body{
     background-color: #FD5262;
     border-color: #FD5262;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #FD5262), to(#FD5262));
+    color: white;
+    background-clip: padding-box;
+}
+.ui-btn-yellow {
+    background-color: #f3c607;
+    border-color: #f3c607;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #f3c607), to(#f3c607));
     color: white;
     background-clip: padding-box;
 }
@@ -132,6 +149,25 @@ body{
 }
 .forum-block .ui-col{
     padding-bottom: 15px;
+}
+.seller-block{
+    text-align: center;
+    padding: 0;
+    background: transparent;
+    border-bottom: #f2f2f2;
+    color: #fff
+}
+.seller-block a{
+    color: #fff
+}
+.seller-block .ui-avatar-one{
+    margin: 0 auto
+}
+.seller-block .ui-col{
+    padding-bottom: 15px;
+}
+.sales-champions{
+    color: #dd0303
 }
 .servce-lists{
     margin-top: 15px;
@@ -266,6 +302,9 @@ body{
     margin-left: 10px;
     color: #2983DB
 }
+.schedule-item .ui-list{
+    background: transparent
+}
 /*商家介绍*/
 .shop-title-holder{
     text-align: center;
@@ -356,6 +395,120 @@ body{
     width: 60px;
     height: 60px;
 }
+/*便民服务*/
+.fixed-service-btns{
+    width: 50%;
+    margin: 52% auto 0;
+}
+.fixed-service-btns .ui-btn-wrap{
+    padding-bottom: 0;    
+}
+.fixed-service-btns .ui-btn-lg{
+    font-size: 14px;
+}
+/*购房直通车*/
+.condition-items,.condition-label,.condition-btns{
+    clear: both
+}
+.condition-items{
+    margin-bottom: 10px;
+}
+.condition-items .ui-btn-wrap{
+    padding: 0
+}
+.condition-items button{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.condition-label{
+    margin-bottom: 10px;
+}
+.condition-label button{
+    background: #74b1fc;   
+    border-color: #74b1fc;
+}
+.condition-btns .ui-btn-wrap button{
+    margin-bottom: 10px;
+    background: #0459ad;
+    padding-left: 5px;
+    padding-right: 5px; 
+    width: auto;
+    border-radius: 5px;
+}
+.condition-btns .ui-btn-wrap button.active{
+    background: #fb3d3d;
+    color: #fff
+}
+.condition-items button.condition-reset{
+    background-color: #0c9de0;
+    border-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #0c9de0), to(#063185));
+    color: white;
+    background-clip: padding-box;
+}
+.condition-items button.condition-submit{
+    background-color: #ff6c00;
+    border-color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #ff6c00), to(#a35502));
+    color: white;
+    background-clip: padding-box;
+}
+.ui-grid-full {
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    padding-top: 0;
+    background: transparent;
+}
+.ui-grid-full>li {
+    width: 100%;
+}
+.ui-grid-full li {
+    padding-bottom: 10px;
+    float: left;
+    position: relative;
+    -webkit-box-sizing: border-box;
+}
+.ui-grid-full-img {
+    padding-top: 54.8%;
+    position: relative;
+    width: 100%;
+}
+.ui-grid-full-img img, .ui-grid-full-img>span {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.ui-grid-full .post-list-top-fixed {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51,51,51,0.5);
+    z-index: 1;
+    height: 50px;
+    padding-left: 15px;
+    padding-top: 5px;
+    color: #f6ae00
+}
+.post-list-top-fixed .post-list-title {    
+    font-size: 16px;
+    color: #fff;    
+}
+/*在线咨询页面*/
+.contact-project-logo{
+    width: 70px;
+    height: 55px;
+    margin: 0 auto 15px;
+}
+.contact-project-logo img{
+    max-width: 100%
+}
+.contact-project-faceimg img{
+    max-width: 100%
+}
 /*页面背景*/
 .fixed-bg{
     width: 100%;
@@ -367,14 +520,24 @@ body{
     z-index: -1;    
     background-size:cover 
 }
+.fixed-bg img{
+    width: 100%;
+}
 .question-bg{
     background: url(../images/question-bg.png) no-repeat center;
+    background-size: cover
 }
 .bluesky-bg{
     background: url(../images/bluesky-bg.png) no-repeat center;
+    background-size: cover
 }
 .city-bg{
     background: url(../images/city-bg.png) no-repeat center;
+    background-size: cover
+}
+.service-bg{
+    background: url(../images/service_bg.png) no-repeat;
+    background-size: cover
 }
 .online-contact{
     background: #223A92
@@ -385,7 +548,9 @@ body{
     background: #0056ff
 }
 .footer-logo{
+    width: 200px;
     height: 50px;
+    margin: 0 auto;
     background: url(../images/footer_logo.png) no-repeat center;
     background-size: contain
 }
