@@ -17,6 +17,12 @@ body{
 .color-blue{
     color: #017EFF
 }
+.ui-slider{
+    padding-top: 75%
+}
+.ui-btn-lg{
+    border: 0
+}
 /*页面导航*/
 .ui-footer-positive, .ui-header-positive{
     background: #0056ff
@@ -32,10 +38,19 @@ body{
     left: 0;
 }
 .ui-header .fa-home{
-    right: 50px;
+    right: 36px;
+    font-size: 24px;
 }
 .ui-header .fa-list{
     right: 0;
+    font-size: 24px;
+}
+.ui-header h1{
+    max-width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0 auto
 }
 .top-navbar{
     height: 45px;
@@ -48,7 +63,10 @@ body{
     padding: 5px 10px;   
     color: #333;
     text-align: center;
-    margin-top: 5px
+    margin-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .top-navbar a.active{
     background: #16A9F1;
@@ -108,7 +126,7 @@ body{
 .logo-holder{
     max-width: 100%;
     height: 80px;    
-    margin: 90px 25px;    
+    margin: 25px;    
     background: url(../images/form-logo.png) no-repeat center;
     background-size: contain
 }
@@ -217,6 +235,9 @@ body{
     background: #fa9121;
     text-align: center;
     padding: 4px;
+    border-color: #fa9121;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fa9121), to(#b66105));
+    background-clip: padding-box;
 }
 .dark-blue-form .btn-holder button{
     border: 1px dashed #333;
@@ -275,6 +296,70 @@ body{
     border-radius: 200px;
     padding-left: 15px;
     padding-right: 15px;
+    -webkit-appearance: none;
+    border: none
+}
+/*首页*/
+.index-navbar-holder{
+    padding: 0 10px;
+}
+.index-navbar-holder .ui-list{
+    background: rgba(255,255,255,0.8);
+    margin-bottom: 5px;
+    height: 74px;
+}
+.index-navbar-holder .ui-list>li{
+    margin-left: 0;
+}
+.index-navbar-holder .ui-list-img{
+    width: 84px;
+    height: 74px;
+    color: #fff;
+    text-align: center;
+    line-height: 72px;
+    font-size: 36px;
+    margin: 0;
+    margin-right: 15px;
+}
+.index-navbar-holder .ui-btn{
+    border: 0;
+    border-radius: 200px;
+    background: #fff;
+    min-width: 34px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 34px;
+    color: #0466ff;    
+}
+.index-navbar-holder .active{
+    background: #0466ff;
+    color: #fff
+}
+.index-navbar-holder p{
+    color: #a09f9f
+}
+.index-navbar-holder h4{
+    color: #525252;
+}
+.index-navbar-holder .bg-color-1{
+    background: #0466ff
+}
+.index-navbar-holder .bg-color-2{
+    background: #f0cd01
+}
+.index-navbar-holder .bg-color-3{
+    background: #82db03
+}
+.index-navbar-holder .bg-color-4{
+    background: #a41ab6
+}
+.index-navbar-holder .bg-color-5{
+    background: #04c0e8
+}
+.index-navbar-holder .bg-color-6{
+    background: #f75607
 }
 /*报事报修*/
 .report-btns .ui-list{
@@ -396,15 +481,35 @@ body{
     height: 60px;
 }
 /*便民服务*/
+.fixed-service-btns-holder{
+    width: 320px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative
+}
+.fixed-service-btns-holder img{
+    max-width: 100%;
+}
 .fixed-service-btns{
-    width: 50%;
-    margin: 52% auto 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    margin-left: -90px
 }
 .fixed-service-btns .ui-btn-wrap{
-    padding-bottom: 0;    
+    width: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 0;
 }
 .fixed-service-btns .ui-btn-lg{
     font-size: 14px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    box-shadow: none;
+    height: 36px;
+    line-height: 36px;
 }
 /*购房直通车*/
 .condition-items,.condition-label,.condition-btns{
@@ -541,6 +646,10 @@ body{
 }
 .online-contact{
     background: #223A92
+}
+.unique-service-bg{
+    background: url(../images/unique-service-bg.png) no-repeat;
+    background-size: cover
 }
 /*页面底部导航*/
 .footer-container{
