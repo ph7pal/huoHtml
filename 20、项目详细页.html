@@ -18,24 +18,34 @@
         <link rel="stylesheet" type="text/css" href="./common/css/zmf.css" />
         <script type="text/javascript" src="./common/js/zepto-v1.1.0.js"></script>
         <script type="text/javascript" src="./common/js/frozen-v1.3.0.js"></script>        
-        <title>页面标题</title>
+        <title>20、项目详细页</title>
     </head>
     <body class="city-bg">
         <header class="ui-header ui-header-positive">
             <h1>首创光和城</h1>
             <i class="header-fixed-btn fa fa-angle-left" onclick="history.back()"></i>
             <i class="header-fixed-btn fa fa-home" onclick="history.back()"></i>
-            <i class="header-fixed-btn fa fa-list" onclick="history.back()"></i>            
+            <i class="header-fixed-btn fa fa-list"></i>            
         </header>  
+        <div class="ui-container header-scroller" id="header-scroller">
+            <ul class="ui-list ui-list-text ui-list-link">
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏1</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏2</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏3</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏4</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏5</h4></li>
+            </ul>            
+        </div>
+        <!--头部导航完-->   
         <footer class="ui-footer project-footer-navbar">
             <ul class="ui-row">
-                <li class="ui-col ui-col-33 project-phone">
+                <li class="ui-col ui-col-33 project-phone" data-href="tel:123456">
                     一键拨号 <i class="fa fa-phone"></i>
                 </li>
-                <li class="ui-col ui-col-33 project-map">
+                <li class="ui-col ui-col-33 project-map" data-href="tel:123456">
                     一键导航 <i class="fa fa-map-marker"></i>
                 </li>
-                <li class="ui-col ui-col-33 project-sms">
+                <li class="ui-col ui-col-33 project-sms" data-href="tel:123456">
                     在线咨询 <i class="fa fa-commenting"></i>
                 </li>
             </ul>

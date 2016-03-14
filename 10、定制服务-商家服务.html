@@ -18,66 +18,76 @@
         <link rel="stylesheet" type="text/css" href="./common/css/zmf.css" />
         <script type="text/javascript" src="./common/js/zepto-v1.1.0.js"></script>
         <script type="text/javascript" src="./common/js/frozen-v1.3.0.js"></script>        
-        <title>页面标题</title>
+        <title>10、定制服务-商家服务</title>
     </head>
     <body>
         <header class="ui-header ui-header-positive">
             <h1>首创洪恩国际生活社区</h1>
             <i class="header-fixed-btn fa fa-angle-left" onclick="history.back()"></i>
             <i class="header-fixed-btn fa fa-home" onclick="history.back()"></i>
-            <i class="header-fixed-btn fa fa-list" onclick="history.back()"></i>            
-        </header>        
+            <i class="header-fixed-btn fa fa-list"></i>            
+        </header>   
+        <div class="ui-container header-scroller" id="header-scroller">
+            <ul class="ui-list ui-list-text ui-list-link">
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏1</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏2</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏3</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏4</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏5</h4></li>
+            </ul>            
+        </div>
+        <!--头部导航完-->   
         <div class="ui-container container">
             <div class="slider-block">
                 <div class="ui-slider">
                     <ul class="ui-slider-content" style="width: 300%">
-                        <li><span style="background-image:url(./assets/slider_bg.png)"></span></li>
-                        <li><span style="background-image:url(./assets/slider_bg2.png)"></span></li>
-                        <li><span style="background-image:url(./assets/slider_bg.png)"></span></li>
+                        <li data-href="#"><span style="background-image:url(./assets/slider_bg.png)"></span></li>
+                        <li data-href="#"><span style="background-image:url(./assets/slider_bg2.png)"></span></li>
+                        <li data-href="#"><span style="background-image:url(./assets/slider_bg.png)"></span></li>
                     </ul>
                 </div>
             </div>
             <div class="forum-block">
-                <div class="ui-row-flex ui-whitespace">
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                <div class="ui-row-flex">
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn1.png)"></span></div>
                         <p class="ui-nowrap">家政清洁</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn2.png)"></span></div>
                         <p class="ui-nowrap">电器维修</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn3.png)"></span></div>
                         <p class="ui-nowrap">餐饮</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn4.png)"></span></div>
                         <p class="ui-nowrap">鲜花定送</p>
                     </div>
                 </div>
-                <div class="ui-row-flex ui-whitespace">
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                <div class="ui-row-flex">
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn5.png)"></span></div>
                         <p class="ui-nowrap">宠物美容</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn6.png)"></span></div>
                         <p class="ui-nowrap">桶装水配送</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn7.png)"></span></div>
                         <p class="ui-nowrap">搬家服务</p>
                     </div>
-                    <div class="ui-col ui-col">
-                        <div class="ui-avatar-one"><span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span></div>
+                    <div class="ui-col ui-col" data-href="#">
+                        <div class="ui-avatar-one"><span style="background-image:url(./common/images/btn8.png)"></span></div>
                         <p class="ui-nowrap">开通中…</p>
                     </div>
                 </div>
             </div>
             <div class="servce-lists">
                 <ul class="ui-list ui-list-link ui-border-b">
-                    <li>
+                    <li data-href="#">
                         <div class="ui-list-thumb">
                             <span style="background-image:url(./assets/qinyuan.png)"></span>
                         </div>
@@ -87,7 +97,7 @@
                             <p class="ui-nowrap">联系电话：1892345*****</p>
                         </div>
                     </li>
-                    <li>
+                    <li data-href="#">
                         <div class="ui-list-thumb">
                             <span style="background-image:url(./assets/qinyuan.png)"></span>
                         </div>
@@ -97,7 +107,7 @@
                             <p class="ui-nowrap">联系电话：1892345*****</p>
                         </div>
                     </li>
-                    <li>
+                    <li data-href="#">
                         <div class="ui-list-thumb">
                             <span style="background-image:url(./assets/qinyuan.png)"></span>
                         </div>

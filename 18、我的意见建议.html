@@ -18,16 +18,25 @@
         <link rel="stylesheet" type="text/css" href="./common/css/zmf.css" />
         <script type="text/javascript" src="./common/js/zepto-v1.1.0.js"></script>
         <script type="text/javascript" src="./common/js/frozen-v1.3.0.js"></script>
-        <script type="text/javascript" src="./common/js/zmf.js"></script>
-        <title>页面标题</title>
+        <title>18、我的意见建议</title>
     </head>
     <body class="bluesky-bg">
         <header class="ui-header ui-header-positive">
             <h1>咨询建议</h1>
             <i class="header-fixed-btn fa fa-angle-left" onclick="history.back()"></i>
             <i class="header-fixed-btn fa fa-home" onclick="history.back()"></i>
-            <i class="header-fixed-btn fa fa-list" onclick="history.back()"></i>            
+            <i class="header-fixed-btn fa fa-list"></i>            
         </header>        
+        <div class="ui-container header-scroller" id="header-scroller">
+            <ul class="ui-list ui-list-text ui-list-link">
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏1</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏2</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏3</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏4</h4></li>
+                <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏5</h4></li>
+            </ul>            
+        </div>
+        <!--头部导航完-->   
         <div class="ui-container container">
             <div class="panel">
                 <div class="panel-header">
@@ -44,7 +53,7 @@
             </div>
             <div class="module report-btns">
                 <ul class="ui-list ui-list-link">
-                    <li class="ui-border-t">                        
+                    <li class="ui-border-t" data-href="#">                        
                         <div class="ui-list-info">
                             <p class="ui-nowrap report-title">我的意见建议标题名称</p>
                             <p class="ui-nowrap">[2016-03-12]</p>
@@ -52,7 +61,7 @@
                     </li>
                 </ul>
                 <ul class="ui-list ui-list-link">
-                    <li class="ui-border-t">                        
+                    <li class="ui-border-t" data-href="#">                        
                         <div class="ui-list-info">
                             <p class="ui-nowrap report-title">我的意见建议标题名称</p>
                             <p class="ui-nowrap">[2016-03-12]</p>
@@ -64,5 +73,6 @@
         <footer class="footer-container">
             <div class="footer-logo"></div>
         </footer>
+        <script type="text/javascript" src="./common/js/zmf.js"></script>
     </body>
 </html>

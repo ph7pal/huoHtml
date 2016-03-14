@@ -163,7 +163,9 @@ body{
     border-bottom: #f2f2f2
 }
 .forum-block .ui-avatar-one{
-    margin: 0 auto
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
 }
 .forum-block .ui-col{
     padding-bottom: 15px;
@@ -299,9 +301,15 @@ body{
     -webkit-appearance: none;
     border: none
 }
+.panel-form .form-submit .ui-btn-lg:before,.panel-form .form-submit .ui-btn-primary:before{
+    border: none
+}
 /*首页*/
 .index-navbar-holder{
     padding: 0 10px;
+}
+.index-navbar-holder .ui-btn-lg:before,.index-navbar-holder .ui-btn-s:before,.index-navbar-holder .ui-btn:before{
+    border: none
 }
 .index-navbar-holder .ui-list{
     background: rgba(255,255,255,0.8);
@@ -496,6 +504,9 @@ body{
     left: 50%;
     margin-left: -90px
 }
+.fixed-service-btns .ui-btn-lg:before,.fixed-service-btns .ui-btn-s:before,.fixed-service-btns .ui-btn:before{
+    border:none
+}
 .fixed-service-btns .ui-btn-wrap{
     width: 180px;
     margin: 0 auto;
@@ -531,6 +542,7 @@ body{
 .condition-label button{
     background: #74b1fc;   
     border-color: #74b1fc;
+    height: 28px;   
 }
 .condition-btns .ui-btn-wrap button{
     margin-bottom: 10px;
@@ -538,6 +550,7 @@ body{
     padding-left: 5px;
     padding-right: 5px; 
     width: auto;
+    height: 28px;   
     border-radius: 5px;
 }
 .condition-btns .ui-btn-wrap button.active{
@@ -614,6 +627,16 @@ body{
 .contact-project-faceimg img{
     max-width: 100%
 }
+/*百问百答*/
+.question-answers{
+    margin-bottom: 15px;
+}
+.question-answers li{
+    list-style:disc;
+    list-style:inside;
+    margin-bottom: 5px;
+    color: #fff
+}
 /*页面背景*/
 .fixed-bg{
     width: 100%;
@@ -662,4 +685,24 @@ body{
     margin: 0 auto;
     background: url(../images/footer_logo.png) no-repeat center;
     background-size: contain
+}
+/*边侧导航*/
+.header-scroller{
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    overflow-y: scroll;
+    top: -2000px;
+    z-index: 99;
+}
+.body-cover{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
 }
