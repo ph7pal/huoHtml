@@ -1,7 +1,7 @@
 //包装函数
 module.exports=function(grunt){
     var bannerContent ='/*!\n' +
-        ' * 婚礼总动员 <%= pkg.homepage %>\n' +
+        ' * 新灵中国 <%= pkg.homepage %>\n' +
         ' * Copyright <%= grunt.template.today("yyyy") %>\n' +
         ' * Author <%= pkg.author %> <%= pkg.authorUrl %>\n' +
         ' * This is NOT a freeware, use is subject to license terms\n' +
