@@ -1,4 +1,5 @@
 body{
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", SimSun, sans-serif;
     font-size: 13px;
     line-height: 1.7
 }
@@ -808,6 +809,10 @@ input,textarea{
 .header-scroller .ui-list{
     background: transparent
 }
+.header-scroller .ui-list-text>li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 .body-cover{
     width: 100%;
     height: 100%;
@@ -820,9 +825,8 @@ input,textarea{
 .bg-elements img {position:absolute; z-index:1;}
 .bg-elements img.anim-scale {-webkit-transform:scale(0,0); -webkit-transition:-webkit-transform 1000ms;}
 .bg-elements img:nth-child(1) {right:0; top:50px; width:43.65%;}
-.bg-elements img:nth-child(2) {right:55px; top:190px; width:43.65%;}
-.bg-elements img:nth-child(3) {right:40px; top:300px; width:17.53%;}
-.bg-elements img:nth-child(4) {right:15px; top:400px; width:31.15%;}
+.bg-elements img:nth-child(2) {right:55px; top:300px; width:43.65%;}
+.bg-elements img:nth-child(3) {right:40px; top:190px; width:17.53%;}
 body.menu-on .bg-elements img:nth-child(1) {-webkit-transition-delay:1500ms;}
 body.menu-on .bg-elements img:nth-child(2) {-webkit-transition-delay:1000ms;}
 body.menu-on .bg-elements img:nth-child(3) {-webkit-transition-delay:500ms;}

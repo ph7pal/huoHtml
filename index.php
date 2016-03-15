@@ -44,7 +44,7 @@ foreach ($files as $file){
 }
 natsort($fileArr);
 foreach($fileArr as $_file){
-    $_file=  iconv('GBK', 'UTF-8', $_file);
+    //$_file=  iconv('GBK', 'UTF-8', $_file);
     if(strpos($_file, '.html')!==false){
         echo '<p><a href="'.$_file.'">'.$_file.'</a></p>';
     }
