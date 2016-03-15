@@ -26,6 +26,9 @@ body{
 .ui-tooltips{
     z-index: 2
 }
+input,textarea{
+    border-radius: 5px;
+}
 /*页面导航*/
 .ui-footer-positive, .ui-header-positive{
     background: #0056ff
@@ -44,7 +47,7 @@ body{
     right: 36px;
     font-size: 24px;
 }
-.ui-header .fa-list{
+.ui-header .header-toggle-btn{
     right: 0;
     font-size: 24px;
 }
@@ -64,11 +67,18 @@ body{
     width: 100%;
     z-index: 97
 }
-.top-navbar .header-btn{
-    display: block;
-    max-width: 100%;
+.top-navbar .ui-col{
+    text-align: center;
+    line-height: 38px;
+}
+.top-navbar a{
+    text-align: center
+}
+.top-navbar .header-btn{    
+    width:auto;
+    max-width: 100%;    
     border-radius: 20px;
-    padding: 2px 8px;   
+    padding: 5px 10px;   
     color: #333;
     text-align: center;
     margin-top: 5px;
@@ -236,10 +246,12 @@ body{
     color: #f29900
 }
 .dark-blue-form .ui-tooltips-warn .ui-tooltips-cnt{
-    background: #fff;
+    background: rgba(255,255,255,0.6);
     padding-top: 0;
     padding-bottom: 0;
-    color: #6f4a0a
+    color: #6f4a0a;
+    border: 1px solid #fff;
+    border-radius: 5px;
 }
 .dark-blue-form .btn-holder{
     height: 45px;
@@ -562,6 +574,12 @@ body{
     width: 60px;
     height: 60px;
 }
+.news-lists .ui-list-info h4{
+    font-size: 14px;
+}
+.news-lists .ui-list-info p{
+    font-size: 13px;
+}
 /*便民服务*/
 .fixed-service-btns-holder{
     width: 320px;
@@ -637,6 +655,9 @@ body{
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #0c9de0), to(#063185));
     color: white;
     background-clip: padding-box;
+    padding: 5px 10px;
+    height: 42px;
+    min-width: 80px;
 }
 .condition-items button.condition-submit{
     background-color: #ff6c00;
@@ -644,6 +665,9 @@ body{
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #ff6c00), to(#a35502));
     color: white;
     background-clip: padding-box;
+    padding: 5px 10px;
+    height: 42px;
+    min-width: 80px;
 }
 .ui-grid-full {
     padding-left: 0;
@@ -773,12 +797,16 @@ body{
     display: none;
     position: fixed;
     right: 0;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
+    top:0;
+    width: 50%;
+    height: 100%;
     overflow-y: scroll;
-    top: -2000px;
     z-index: 99;
+    background: rgba(0,0,0,0.8);
+    color: #a7a7a7;
+}
+.header-scroller .ui-list{
+    background: transparent
 }
 .body-cover{
     width: 100%;
@@ -789,3 +817,17 @@ body{
     left: 0;
     z-index: 97
 }
+.bg-elements img {position:absolute; z-index:1;}
+.bg-elements img.anim-scale {-webkit-transform:scale(0,0); -webkit-transition:-webkit-transform 1000ms;}
+.bg-elements img:nth-child(1) {right:0; top:50px; width:43.65%;}
+.bg-elements img:nth-child(2) {right:55px; top:190px; width:43.65%;}
+.bg-elements img:nth-child(3) {right:40px; top:300px; width:17.53%;}
+.bg-elements img:nth-child(4) {right:15px; top:400px; width:31.15%;}
+body.menu-on .bg-elements img:nth-child(1) {-webkit-transition-delay:1500ms;}
+body.menu-on .bg-elements img:nth-child(2) {-webkit-transition-delay:1000ms;}
+body.menu-on .bg-elements img:nth-child(3) {-webkit-transition-delay:500ms;}
+body.menu-on .bg-elements img.anim-scale {-webkit-transform:scale(1,1); -webkit-opacity:1;}
+body.menu-on .ui-header,body.menu-on .ui-container,body.menu-on .top-navbar,body.menu-on .footer-container,body.menu-on .container{-webkit-transform:translateX(-50%);}
+/*body.menu-on .ui-header~.ui-container{
+    border-top: 0
+}*/

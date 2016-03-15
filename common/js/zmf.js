@@ -35,7 +35,8 @@ $('.ui-searchbar-cancel').tap(function () {
     $('.ui-searchbar-wrap').removeClass('focus');
 });
 /*导航条上菜单按钮*/
-$('.fa-list').unbind('tap').tap(function () {
+$('.header-toggle-btn').unbind('tap').tap(function () {
+    var dom=$(this);
     var _dom = $('#header-scroller');
     var _dom2 = $('#body-cover');
     if (_dom.css('display') == 'none') {
@@ -43,9 +44,13 @@ $('.fa-list').unbind('tap').tap(function () {
         if (!_dom2.length) {
             $('body').append('<div class="body-cover" id="body-cover"></div>');
         }
+        dom.removeClass('fa-ellipsis-h').addClass('fa-remove');
+        $('body').addClass('menu-on');
     } else {
         _dom.hide().animate({top: '-2000'}, 300);
         _dom2.remove();
+        $('body').removeClass('menu-on');
+        dom.removeClass('fa-remove').addClass('fa-ellipsis-h');
     }
 })
 /*购房直通车的条件筛选*/
