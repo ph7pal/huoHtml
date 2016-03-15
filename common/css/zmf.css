@@ -23,6 +23,9 @@ body{
 .ui-btn-lg{
     border: 0
 }
+.ui-tooltips{
+    z-index: 2
+}
 /*页面导航*/
 .ui-footer-positive, .ui-header-positive{
     background: #0056ff
@@ -53,14 +56,19 @@ body{
     margin: 0 auto
 }
 .top-navbar{
-    height: 45px;
-    background: url(../images/topbar_bg.png) repeat-x top
+    height: 38px;
+    background: url(../images/topbar_bg.png) repeat-x top;
+    position: fixed;
+    right: 0;
+    top: 45px;
+    width: 100%;
+    z-index: 97
 }
 .top-navbar .header-btn{
     display: block;
     max-width: 100%;
     border-radius: 20px;
-    padding: 5px 10px;   
+    padding: 2px 8px;   
     color: #333;
     text-align: center;
     margin-top: 5px;
@@ -74,6 +82,9 @@ body{
 }
 .top-navbar .ui-searchbar-wrap{
     background: transparent
+}
+.top-navbar ~ .ui-container,.top-navbar ~ .container,.header-hack{
+    border-top: 93px solid transparent;
 }
 /*按钮*/
 .ui-btn-primary {
@@ -226,8 +237,8 @@ body{
 }
 .dark-blue-form .ui-tooltips-warn .ui-tooltips-cnt{
     background: #fff;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
     color: #6f4a0a
 }
 .dark-blue-form .btn-holder{
@@ -241,6 +252,27 @@ body{
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #fa9121), to(#b66105));
     background-clip: padding-box;
 }
+.dark-blue-form input,.dark-blue-form select{
+    color: #fff;
+    font-size: 13px;
+}
+.dark-blue-form input::-webkit-input-placeholder,.dark-blue-form textarea::-webkit-input-placeholder { 
+    color:    #fff;
+    font-size: 13px;
+}
+.dark-blue-form input:-moz-placeholder,.dark-blue-form textarea:-moz-placeholder { 
+    color:    #fff;
+    font-size: 13px;
+}
+.dark-blue-form input::-moz-placeholder,.dark-blue-form textarea::-moz-placeholder { 
+    color:    #fff;
+    font-size: 13px;
+}
+.dark-blue-form input:-ms-input-placeholder,.dark-blue-form textarea:-ms-input-placeholder { 
+    color:    #fff;
+    font-size: 13px;
+}
+
 .dark-blue-form .btn-holder button{
     border: 1px dashed #333;
     width: 100%;
@@ -254,10 +286,10 @@ body{
     max-width: 100%;
     margin: 15px;
     min-height: 200px;
-    background: rgba(255,255,255,0.9);    
+    background: rgba(255,255,255,0.95);    
     border-radius: 5px;   
     margin-bottom: 20px;
-    
+
 }
 .panel .panel-header{
     height: 48px;
@@ -303,6 +335,51 @@ body{
 }
 .panel-form .form-submit .ui-btn-lg:before,.panel-form .form-submit .ui-btn-primary:before{
     border: none
+}
+.process-timeline{
+    padding-bottom:20px;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 15px;
+}
+.timeline-item{
+    padding-left: 10px;
+    border-left: 2px solid #2499DC;
+    position: relative;
+    padding-bottom: 30px;
+}
+.timeline-item .dot{
+    position: absolute;
+    top: 0;
+    left: -8px;
+    color: #2499DC;
+    width: 16px;
+    height: 16px;
+    display: block;
+    font-size: 16px;
+}
+.timeline-item .dot-white{
+    background: #fff
+}
+.timeline-item h4{
+    color: #35a0dd;
+}
+.timeline-item + .timeline-item{
+    margin-top: -15px;
+}
+.timeline-item:last-child{
+    border: 0
+}
+.timeline-item:last-child .dot{
+    left: -6px;
+}
+.timeline-item-grey{
+    border-color:#6d6b6b;
+}
+.timeline-item-grey .dot{
+    color: #6d6b6b;
+}
+.timeline-item-grey h4{
+    color: #6d6b6b;
 }
 /*首页*/
 .index-navbar-holder{
@@ -385,11 +462,11 @@ body{
     background: rgba(255,255,255,0.9);    
     border-radius: 5px;   
     margin-bottom: 20px;    
-    padding: 15px 25px;
+    padding: 15px 10px 15px 0;
     border: 1px solid #2499DC
 }
 .schedule-item img{
-    max-width: 100%;
+    width: 100%;
 }
 .schedule-item .author,.shop-display .author{
     margin-left: 10px;
@@ -420,9 +497,6 @@ body{
 .shop-desc p{
     text-indent: 2em;
     color: #696666
-}
-.shop-display{
-    margin: 0 15px;
 }
 .shop-display .shop-display-date{
     color: #ccc;
@@ -675,9 +749,17 @@ body{
     background-size: cover
 }
 /*页面底部导航*/
+.footer-hack{
+    border-bottom: 56px solid transparent;
+}
 .footer-container{
     height: 50px;
-    background: #0056ff
+    background: #0056ff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 96
 }
 .footer-logo{
     width: 200px;
@@ -705,4 +787,5 @@ body{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 97
 }

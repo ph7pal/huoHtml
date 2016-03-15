@@ -36,26 +36,7 @@
                 <li class="ui-border-t" data-href="#"><h4 class="ui-nowrap">导航栏5</h4></li>
             </ul>            
         </div>
-        <!--头部导航完-->   
-        <div class="ui-container">
-            <div class="top-navbar">
-                <ul class="ui-row">
-                    <li class="ui-col ui-col-25">
-                        <a class="header-btn" href="#">待处理（1）</a>
-                    </li>
-                    <li class="ui-col ui-col-25">
-                        <a class="header-btn active" href="#">处理中（1）</a>
-                    </li>
-                    <li class="ui-col ui-col-25">
-                        <a class="header-btn" href="#">已处理（1）</a>
-                    </li>
-                    <li class="ui-col ui-col-25">
-                        <a class="header-btn" href="#">申请报事报修</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
+        <div class="ui-container container footer-hack">
             <div class="panel">
                 <div class="panel-header">
                     基础信息
@@ -71,15 +52,34 @@
             </div>
             <div class="panel">
                 <div class="panel-header">
-                    报修进度
+                    产权进度
                 </div>
                 <div class="panel-body">
+                    <div class="process-timeline">
+                        <div class="timeline-item">
+                            <span class="dot dot-white"><i class="fa fa-circle"></i></span>
+                            <h4 class="ui-nowrap">资料收集中</h4>
+                            <p class="color-blue">亲爱的业主您好！您的产权资料正收集中，请按提示将未交资料尽快交于签约中心前台。（如需人工帮助请拨打023-67856888）</p>
+                            <p class="color-grey">张三：大概需要好久可以办理完成？  2016-01-11</p>
+                            <p class="color-grey">客服：张先生您好！需要五个工作日。2016-01-11</p>
+                        </div>
+                        <div class="timeline-item timeline-item-grey">
+                            <span class="dot"><i class="fa fa-circle"></i></span>
+                            <h4>资料递交房交所办理中</h4>
+                            <p class="color-grey">亲爱的业主您好！您的产权资料已递交至房交所办理，请您耐心等待！（如需人工帮助请拨打023-67856888）</p>
+                        </div>
+                        <div class="timeline-item timeline-item-grey">
+                            <span class="dot"><i class="fa fa-circle"></i></span>
+                            <h4>办理完结</h4>
+                            <p class="color-grey">亲爱的业主您好！您的产权证已办理完结，请户主本人携带身份证原件至签约中心前台领取。领取时间：周一至周日（9：00-18：00）（如需人工帮助请拨打023-67856888）</p>
+                        </div>
+                    </div>
                     <div class="panel-form">
                         <form action="#">
                             <div class="form-item">
                                 <label>意见反馈</label>
                                 <div class="form-input">
-                                    <textarea placeholder="街道等详细地址" rows="5"></textarea>
+                                    <textarea placeholder="请输入当前进度意见反馈" rows="5"></textarea>
                                 </div>
                             </div>
                             <div class="form-item">                                

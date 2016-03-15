@@ -37,7 +37,7 @@
             </ul>            
         </div>
         <!--头部导航完-->        
-        <div class="ui-container container module">
+        <div class="ui-container container module footer-hack">
             <div class="condition-holder">
                 <form action="#" method="GET">
                     <div class="condition-items">
@@ -48,7 +48,7 @@
                         </div>
                         <div class="condition-btns">
                             <div class="ui-btn-wrap">
-                                <button class="ui-btn-s condition-item active" data-type="area" data-value="123" type="button">江北区</button>                        
+                                <button class="ui-btn-s condition-item" data-type="area" data-value="123" type="button">江北区</button>                        
                                 <button class="ui-btn-s condition-item" data-type="area" data-value="123" type="button">沙坪坝</button>                        
                             </div>
                         </div>
@@ -62,9 +62,9 @@
                         </div>
                         <div class="condition-btns">
                             <div class="ui-btn-wrap">
-                                <button class="ui-btn-s condition-item" data-type="type" data-value="123" type="button">高层</button>                        
-                                <button class="ui-btn-s condition-item" data-type="type" data-value="123" type="button">洋房</button>                        
-                                <button class="ui-btn-s condition-item" data-type="type" data-value="123" type="button">商业</button>                        
+                                <button class="ui-btn-s condition-item" data-type="type" data-multi=1 data-value="123" type="button">高层</button>                        
+                                <button class="ui-btn-s condition-item" data-type="type" data-multi=1 data-value="123" type="button">洋房</button>                        
+                                <button class="ui-btn-s condition-item" data-type="type" data-multi=1 data-value="123" type="button">商业</button>                        
                             </div>
                         </div>
                     </div>
@@ -77,9 +77,9 @@
                         </div>
                         <div class="condition-btns">
                             <div class="ui-btn-wrap">
-                                <button class="ui-btn-s condition-item" data-type="apartment" data-value="123" type="button">一房</button>                        
-                                <button class="ui-btn-s condition-item" data-type="apartment" data-value="123" type="button">两房</button>                        
-                                <button class="ui-btn-s condition-item" data-type="apartment" data-value="123" type="button">三房</button>                        
+                                <button class="ui-btn-s condition-item" data-type="apartment" data-multi=1 data-value="123" type="button">一房</button>                        
+                                <button class="ui-btn-s condition-item" data-type="apartment" data-multi=1 data-value="123" type="button">两房</button>                        
+                                <button class="ui-btn-s condition-item" data-type="apartment" data-multi=1 data-value="123" type="button">三房</button>                        
                             </div>
                         </div>
                     </div>
@@ -92,24 +92,23 @@
                         </div>
                         <div class="condition-btns">
                             <div class="ui-btn-wrap">
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">公园</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">商圈</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">轻轨</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">江景</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">学区</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">高尔夫</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">运动场</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">医院</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">CBD</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">大社区</button>                        
-                                <button class="ui-btn-s condition-item" data-type="tag" data-value="123" type="button">综合体</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">公园</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">商圈</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">轻轨</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">江景</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">学区</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">高尔夫</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">运动场</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">医院</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">CBD</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">大社区</button>                        
+                                <button class="ui-btn-s condition-item" data-type="tag" data-multi=1 data-value="123" type="button">综合体</button>                        
                             </div>
                         </div>
                     </div>
-                    <input type="hidden" id="condition-area" name="area"/>
-                    <input type="hidden" id="condition-type" name="type"/>
-                    <input type="hidden" id="condition-apartment" name="apartment"/>
-                    <input type="hidden" id="condition-tag" name="tag"/>
+                    <div id="selected-condtions"></div>
+                    
+                    
                     <div class="condition-items">                        
                         <div class="condition-btns">
                             <div class="ui-btn-wrap">
