@@ -104,15 +104,31 @@ module.exports=function(grunt){
         //},
 
         imagemin: {                          // Task
-            dynamic: {                         // Another target
+//            dynamic: {                         // Another target
+//                options: {                       // Target options
+//                    optimizationLevel: 5,
+//                },
+//                files: [{
+//                    expand: true,                  // Enable dynamic expansion
+//                    cwd: 'common/images/',                   // Src matches are relative to this path
+//                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+//                    dest: 'common/images/'                  // Destination path prefix
+//                },{
+//                    expand: true,                  // Enable dynamic expansion
+//                    cwd: 'assets/images/',                   // Src matches are relative to this path
+//                    src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+//                    dest: 'assets/images/'                  // Destination path prefix
+//                }]
+//            },
+            assets: {                         // Another target
                 options: {                       // Target options
                     optimizationLevel: 5,
                 },
                 files: [{
                     expand: true,                  // Enable dynamic expansion
-                    cwd: 'jsCssSrc/images/',                   // Src matches are relative to this path
+                    cwd: 'assets',                   // Src matches are relative to this path
                     src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
-                    dest: 'common/images/'                  // Destination path prefix
+                    dest: 'assets'                  // Destination path prefix
                 }]
             }
         },
@@ -148,5 +164,6 @@ module.exports=function(grunt){
     //watch,jshint,csslint,watch,imagemin
     grunt.registerTask('default',['clean:release','uglify:main','cssmin:target','watch']);
     grunt.registerTask('build',['clean:build','uglify:build','cssmin:build']);
+    grunt.registerTask('image',['imagemin']);
 
 };
