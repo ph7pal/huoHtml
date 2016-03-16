@@ -655,9 +655,9 @@ input,textarea{
     border-color: #fff;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #0c9de0), to(#063185));
     color: white;
-    background-clip: padding-box;
-    padding: 5px 10px;
-    height: 42px;
+    background-clip: padding-box;    
+    padding: 2px 5px;
+    height: 32px;
     min-width: 80px;
 }
 .condition-items button.condition-submit{
@@ -666,8 +666,8 @@ input,textarea{
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #ff6c00), to(#a35502));
     color: white;
     background-clip: padding-box;
-    padding: 5px 10px;
-    height: 42px;
+    padding: 2px 5px;
+    height: 32px;
     min-width: 80px;
 }
 .ui-grid-full {

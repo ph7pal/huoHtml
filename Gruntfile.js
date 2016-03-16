@@ -87,21 +87,27 @@ module.exports=function(grunt){
             }
         },
         //合并js文件
-        //concat: {
-        //    options: {
-        //        banner: bannerContent,
-        //        //separator: ';',
-        //        stripBanners: false
-        //    },
-        //    framework: {
-        //        src: [
-        //            '../common/css/bootstrap.min.css',
-        //            '../common/css/font-awesome.min.css',
-        //            '../common/css/font-awesome-ie7.min.css'
-        //        ],
-        //        dest: '../common/css/build.bootstrap.css'
-        //    }
-        //},
+        concat: {
+            options: {
+                banner: bannerContent,
+                //separator: ';',
+                stripBanners: false
+            },
+            coreCss: {
+                src: [
+                    'src/css/frozen-v1.3.0.css',
+                    'src/css/font-awesome-v4.4.0.css',
+                ],
+                dest: 'common/css/common.css'
+            },
+            coreJs: {
+                src: [
+                    'src/js/zepto-v1.1.0.js',
+                    'src/js/frozen-v1.3.0.js',
+                ],
+                dest: 'common/js/common.js'
+            }
+        },
 
         imagemin: {                          // Task
 //            dynamic: {                         // Another target
@@ -165,5 +171,6 @@ module.exports=function(grunt){
     grunt.registerTask('default',['clean:release','uglify:main','cssmin:target','watch']);
     grunt.registerTask('build',['clean:build','uglify:build','cssmin:build']);
     grunt.registerTask('image',['imagemin']);
+    grunt.registerTask('hebing',['concat']);
 
 };
